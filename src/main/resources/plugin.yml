@@ -1,0 +1,20 @@
+name: SpellPlugin
+version: '${project.version}'
+main: com.apricity.spellplugin.SpellPlugin
+api-version: 1.19
+authors: [ Apricity ]
+description: SpellPlugin for 1.19
+
+commands:
+  PlayerListeners:
+    aliases: [spp]
+    description: 主命令
+    usage: |
+      §c/<command> debug >> 切换是否输出debug信息
+      §c/<command> amount >> 返回当前玩家选中了几个点
+      §c/<command> nextP >> 下一种粒子效果
+      §c/<command> lastP >> 上一种粒子效果
+      §c/<command> setP [int n] >> 设置n号粒子效果
+      §c/<command> getAngles >> 获取粒子的PitchYaw
+      §c/<command> open >> 重新获取自己的监视器
+      §c/<command> close >> 关闭自己的监视器

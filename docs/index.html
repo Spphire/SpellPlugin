@@ -216,9 +216,28 @@ figure {
 	<meta name="twitter:title" content="Instant Neural Graphics Primitives with a Multiresolution Hash Encoding">
 	<meta name="twitter:description" content="A paper from NVIDIA Research which presents a method for instant training & rendering of high-quality neural graphics primitives.">
 	<meta name="twitter:image" content="https://nvlabs.github.io/instant-ngp/assets/twitter.jpg">
+	
+	<script>
+
+		function mytime(){
+		
+		var a = new Date();
+		
+		var b = a.toLocaleTimeString();
+		
+		var c = a.toLocaleDateString();
+		
+		document.getElementById("time").innerHTML = c+" "+b;
+		
+		}
+		
+		setInterval(function() {mytime()},1000);
+		
+	</script>
 </head>
 
 <body>
+	
 <div class="container">
 	<div class="paper-title">
 		<h1>Magic-Spells Plugin for Minecraft 1.19+</h1>
